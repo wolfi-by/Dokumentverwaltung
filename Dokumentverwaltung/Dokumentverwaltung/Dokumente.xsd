@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Dokumente" targetNamespace="http://tempuri.org/Dokumente.xsd" xmlns:mstns="http://tempuri.org/Dokumente.xsd" xmlns="http://tempuri.org/Dokumente.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Versionen" msprop:Generator_TableClassName="VersionenDataTable" msprop:Generator_TableVarName="tableVersionen" msprop:Generator_RowChangedName="VersionenRowChanged" msprop:Generator_TablePropName="Versionen" msprop:Generator_RowDeletingName="VersionenRowDeleting" msprop:Generator_RowChangingName="VersionenRowChanging" msprop:Generator_RowEvHandlerName="VersionenRowChangeEventHandler" msprop:Generator_RowDeletedName="VersionenRowDeleted" msprop:Generator_RowClassName="VersionenRow" msprop:Generator_UserTableName="Versionen" msprop:Generator_RowEvArgName="VersionenRowChangeEvent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+        <xs:element name="Version" msprop:Generator_ColumnVarNameInTable="columnVersion" msprop:Generator_ColumnPropNameInRow="Version" msprop:Generator_ColumnPropNameInTable="VersionColumn" msprop:Generator_UserColumnName="Version" type="xs:string" minOccurs="0" />
+        <xs:element name="ProduktID" msprop:Generator_ColumnVarNameInTable="columnProduktID" msprop:Generator_ColumnPropNameInRow="ProduktID" msprop:Generator_ColumnPropNameInTable="ProduktIDColumn" msprop:Generator_UserColumnName="ProduktID" type="xs:int" minOccurs="0" />
+        <xs:element name="Datum" msprop:Generator_ColumnVarNameInTable="columnDatum" msprop:Generator_ColumnPropNameInRow="Datum" msprop:Generator_ColumnPropNameInTable="DatumColumn" msprop:Generator_UserColumnName="Datum" type="xs:dateTime" minOccurs="0" />
+        <xs:element name="Benutzer" msprop:Generator_ColumnVarNameInTable="columnBenutzer" msprop:Generator_ColumnPropNameInRow="Benutzer" msprop:Generator_ColumnPropNameInTable="BenutzerColumn" msprop:Generator_UserColumnName="Benutzer" type="xs:string" minOccurs="0" />
+        <xs:element name="Freigegeben" msprop:Generator_ColumnVarNameInTable="columnFreigegeben" msprop:Generator_ColumnPropNameInRow="Freigegeben" msprop:Generator_ColumnPropNameInTable="FreigegebenColumn" msprop:Generator_UserColumnName="Freigegeben" type="xs:boolean" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Pruefung" msprop:Generator_TableClassName="PruefungDataTable" msprop:Generator_TableVarName="tablePruefung" msprop:Generator_TablePropName="Pruefung" msprop:Generator_RowDeletingName="PruefungRowDeleting" msprop:Generator_RowChangingName="PruefungRowChanging" msprop:Generator_RowEvHandlerName="PruefungRowChangeEventHandler" msprop:Generator_RowDeletedName="PruefungRowDeleted" msprop:Generator_UserTableName="Pruefung" msprop:Generator_RowChangedName="PruefungRowChanged" msprop:Generator_RowEvArgName="PruefungRowChangeEvent" msprop:Generator_RowClassName="PruefungRow">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+        <xs:element name="Pruefung" msprop:Generator_ColumnVarNameInTable="columnPruefung" msprop:Generator_ColumnPropNameInRow="Pruefung" msprop:Generator_ColumnPropNameInTable="PruefungColumn" msprop:Generator_UserColumnName="Pruefung" type="xs:string" minOccurs="0" />
+        <xs:element name="VersionID" msprop:Generator_ColumnVarNameInTable="columnVersionID" msprop:Generator_ColumnPropNameInRow="VersionID" msprop:Generator_ColumnPropNameInTable="VersionIDColumn" msprop:Generator_UserColumnName="VersionID" type="xs:int" minOccurs="0" />
+        <xs:element name="Datum" msprop:Generator_ColumnVarNameInTable="columnDatum" msprop:Generator_ColumnPropNameInRow="Datum" msprop:Generator_ColumnPropNameInTable="DatumColumn" msprop:Generator_UserColumnName="Datum" type="xs:dateTime" minOccurs="0" />
+        <xs:element name="Benutzer" msprop:Generator_ColumnVarNameInTable="columnBenutzer" msprop:Generator_ColumnPropNameInRow="Benutzer" msprop:Generator_ColumnPropNameInTable="BenutzerColumn" msprop:Generator_UserColumnName="Benutzer" type="xs:string" minOccurs="0" />
+        <xs:element name="Freigegeben" msprop:Generator_ColumnVarNameInTable="columnFreigegeben" msprop:Generator_ColumnPropNameInRow="Freigegeben" msprop:Generator_ColumnPropNameInTable="FreigegebenColumn" msprop:Generator_UserColumnName="Freigegeben" type="xs:boolean" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Dokumente" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Dokumente" msprop:Generator_UserDSName="Dokumente">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Versionen" />
+        <xs:element ref="Pruefung" />
+        <xs:element name="Produkte" msprop:Generator_TableClassName="ProdukteDataTable" msprop:Generator_TableVarName="tableProdukte" msprop:Generator_RowChangedName="ProdukteRowChanged" msprop:Generator_TablePropName="Produkte" msprop:Generator_RowDeletingName="ProdukteRowDeleting" msprop:Generator_RowChangingName="ProdukteRowChanging" msprop:Generator_RowEvHandlerName="ProdukteRowChangeEventHandler" msprop:Generator_RowDeletedName="ProdukteRowDeleted" msprop:Generator_RowClassName="ProdukteRow" msprop:Generator_UserTableName="Produkte" msprop:Generator_RowEvArgName="ProdukteRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="Produktname" msprop:Generator_ColumnVarNameInTable="columnProduktname" msprop:Generator_ColumnPropNameInRow="Produktname" msprop:Generator_ColumnPropNameInTable="ProduktnameColumn" msprop:Generator_UserColumnName="Produktname" type="xs:string" minOccurs="0" />
+              <xs:element name="Datum" msprop:Generator_ColumnVarNameInTable="columnDatum" msprop:Generator_ColumnPropNameInRow="Datum" msprop:Generator_ColumnPropNameInTable="DatumColumn" msprop:Generator_UserColumnName="Datum" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Benutzer" msprop:Generator_ColumnVarNameInTable="columnBenutzer" msprop:Generator_ColumnPropNameInRow="Benutzer" msprop:Generator_ColumnPropNameInTable="BenutzerColumn" msprop:Generator_UserColumnName="Benutzer" type="xs:string" minOccurs="0" />
+              <xs:element name="Freigegeben" msprop:Generator_ColumnVarNameInTable="columnFreigegeben" msprop:Generator_ColumnPropNameInRow="Freigegeben" msprop:Generator_ColumnPropNameInTable="FreigegebenColumn" msprop:Generator_UserColumnName="Freigegeben" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Documents" msprop:Generator_TableClassName="DocumentsDataTable" msprop:Generator_TableVarName="tableDocuments" msprop:Generator_RowChangedName="DocumentsRowChanged" msprop:Generator_TablePropName="Documents" msprop:Generator_RowDeletingName="DocumentsRowDeleting" msprop:Generator_RowChangingName="DocumentsRowChanging" msprop:Generator_RowEvHandlerName="DocumentsRowChangeEventHandler" msprop:Generator_RowDeletedName="DocumentsRowDeleted" msprop:Generator_RowClassName="DocumentsRow" msprop:Generator_UserTableName="Documents" msprop:Generator_RowEvArgName="DocumentsRowChangeEvent" minOccurs="0" maxOccurs="79228162514264337593543950335">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="Dokument" msprop:Generator_ColumnVarNameInTable="columnDokument" msprop:Generator_ColumnPropNameInRow="Dokument" msprop:Generator_ColumnPropNameInTable="DokumentColumn" msprop:Generator_UserColumnName="Dokument" type="xs:string" minOccurs="0" />
+              <xs:element name="Datum" msprop:Generator_ColumnVarNameInTable="columnDatum" msprop:Generator_ColumnPropNameInRow="Datum" msprop:Generator_ColumnPropNameInTable="DatumColumn" msprop:Generator_UserColumnName="Datum" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Benutzer" msprop:Generator_ColumnVarNameInTable="columnBenutzer" msprop:Generator_ColumnPropNameInRow="Benutzer" msprop:Generator_ColumnPropNameInTable="BenutzerColumn" msprop:Generator_UserColumnName="Benutzer" type="xs:string" minOccurs="0" />
+              <xs:element name="Freigegeben" msprop:Generator_ColumnVarNameInTable="columnFreigegeben" msprop:Generator_ColumnPropNameInRow="Freigegeben" msprop:Generator_ColumnPropNameInTable="FreigegebenColumn" msprop:Generator_UserColumnName="Freigegeben" type="xs:boolean" minOccurs="0" />
+              <xs:element name="PruefungID" msprop:Generator_ColumnVarNameInTable="columnPruefungID" msprop:Generator_ColumnPropNameInRow="PruefungID" msprop:Generator_ColumnPropNameInTable="PruefungIDColumn" msprop:Generator_UserColumnName="PruefungID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Versionen" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="Pruefung_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Pruefung" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="Produkte_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Produkte" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="Documents_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Documents" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:keyref name="FK_Documents_Pruefung" refer="Pruefung_Constraint1" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:Documents" />
+      <xs:field xpath="mstns:PruefungID" />
+    </xs:keyref>
+    <xs:keyref name="FK_Pruefung_Versionen" refer="Constraint1" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:Pruefung" />
+      <xs:field xpath="mstns:VersionID" />
+    </xs:keyref>
+    <xs:keyref name="FK_Produkte_Versionen" refer="Produkte_Constraint1" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:Versionen" />
+      <xs:field xpath="mstns:ProduktID" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>
