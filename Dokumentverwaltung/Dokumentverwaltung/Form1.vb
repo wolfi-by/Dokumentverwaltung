@@ -198,6 +198,7 @@ Public Class Form1
             End If
         End If
         Me.Text = title
+
     End Sub
     Private Sub EinstellungenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EinstellungenToolStripMenuItem.Click
         frmSettings.ShowDialog()
