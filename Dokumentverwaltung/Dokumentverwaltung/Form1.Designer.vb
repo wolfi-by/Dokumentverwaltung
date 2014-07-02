@@ -125,7 +125,7 @@ Partial Class Form1
         'BeendenToolStripMenuItem
         '
         Me.BeendenToolStripMenuItem.Name = "BeendenToolStripMenuItem"
-        Me.BeendenToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
+        Me.BeendenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.BeendenToolStripMenuItem.Text = "Beenden"
         '
         'AktionToolStripMenuItem
@@ -165,6 +165,7 @@ Partial Class Form1
         'SplitContainer3
         '
         Me.SplitContainer3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SplitContainer3.FixedPanel = System.Windows.Forms.FixedPanel.Panel2
         Me.SplitContainer3.Location = New System.Drawing.Point(0, 0)
         Me.SplitContainer3.Name = "SplitContainer3"
         '
@@ -358,6 +359,7 @@ Partial Class Form1
         'SplitContainer2
         '
         Me.SplitContainer2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SplitContainer2.FixedPanel = System.Windows.Forms.FixedPanel.Panel1
         Me.SplitContainer2.Location = New System.Drawing.Point(0, 24)
         Me.SplitContainer2.Name = "SplitContainer2"
         Me.SplitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal
@@ -397,11 +399,12 @@ Partial Class Form1
         '
         'DataGridViewTextBoxColumn18
         '
-        Me.DataGridViewTextBoxColumn18.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.DataGridViewTextBoxColumn18.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn18.DataPropertyName = "Produktname"
         Me.DataGridViewTextBoxColumn18.HeaderText = "Produktname"
         Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
         Me.DataGridViewTextBoxColumn18.ReadOnly = True
+        Me.DataGridViewTextBoxColumn18.Width = 95
         '
         'DataGridViewCheckBoxColumn4
         '
@@ -432,11 +435,12 @@ Partial Class Form1
         '
         'DataGridViewTextBoxColumn13
         '
-        Me.DataGridViewTextBoxColumn13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.DataGridViewTextBoxColumn13.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn13.DataPropertyName = "Version"
         Me.DataGridViewTextBoxColumn13.HeaderText = "Version"
         Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
         Me.DataGridViewTextBoxColumn13.ReadOnly = True
+        Me.DataGridViewTextBoxColumn13.Width = 67
         '
         'DataGridViewCheckBoxColumn3
         '
@@ -467,11 +471,12 @@ Partial Class Form1
         '
         'DataGridViewTextBoxColumn8
         '
-        Me.DataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.DataGridViewTextBoxColumn8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn8.DataPropertyName = "Pruefung"
         Me.DataGridViewTextBoxColumn8.HeaderText = "Pruefung"
         Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
         Me.DataGridViewTextBoxColumn8.ReadOnly = True
+        Me.DataGridViewTextBoxColumn8.Width = 75
         '
         'DataGridViewCheckBoxColumn2
         '
@@ -502,11 +507,12 @@ Partial Class Form1
         '
         'DataGridViewTextBoxColumn2
         '
-        Me.DataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
+        Me.DataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
         Me.DataGridViewTextBoxColumn2.DataPropertyName = "Dokument"
         Me.DataGridViewTextBoxColumn2.HeaderText = "Dokument"
         Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         Me.DataGridViewTextBoxColumn2.ReadOnly = True
+        Me.DataGridViewTextBoxColumn2.Width = 81
         '
         'DataGridViewCheckBoxColumn1
         '
@@ -537,14 +543,14 @@ Partial Class Form1
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(632, 256)
         Me.Controls.Add(Me.SplitContainer2)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Dokumentenverwaltung"
         Me.MenuStrip1.ResumeLayout(false)
         Me.MenuStrip1.PerformLayout
         Me.SplitContainer3.Panel1.ResumeLayout(false)
