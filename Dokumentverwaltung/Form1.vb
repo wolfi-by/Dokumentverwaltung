@@ -232,11 +232,11 @@ Public Class Form1
     End Sub
 
     Private Sub SpeichernToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SpeichernToolStripMenuItem.Click
-        Dokumente.WriteXml(My.Settings.DatabasePath + "Database.xml")
+        Dokumente.WriteXml(My.Settings.DatabasePath + "\Database.xml")
     End Sub
 
     Private Sub LadenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LadenToolStripMenuItem.Click
-        Dokumente.ReadXml(My.Settings.DatabasePath + "Database.xml")
+        Dokumente.ReadXml(My.Settings.DatabasePath + "\Database.xml")
     End Sub
 
 
@@ -258,6 +258,8 @@ Public Class Form1
         End If
         For Each file As String In files
             Dokumente.Documents.AddDocumentsRow(file, Now, User, freigabe, ActiveTest.ID)
+            Dim filename As String = file.Split(CChar("\")).Last
+            FileCopy(file, My.Settings.DocPath + "\" + filename)
         Next
     End Sub
 

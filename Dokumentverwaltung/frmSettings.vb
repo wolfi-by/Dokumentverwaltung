@@ -1,6 +1,14 @@
 ﻿Public Class frmSettings
 
     Private Sub butOK_Click(sender As Object, e As EventArgs) Handles butOK.Click
+
+
+        If txtDocs.Text <> "" Then
+            My.Settings.DocPath = txtDocs.Text
+        End If
+        If txtDatabase.Text <> "" Then
+            My.Settings.DatabasePath = txtDatabase.Text
+        End If
         My.Settings.Save()
         Me.Close()
     End Sub
@@ -15,7 +23,6 @@
         dia.ShowDialog()
         If dia.SelectedPath <> "" Then
             txtDocs.Text = dia.SelectedPath
-            My.Settings.DocPath = dia.SelectedPath
         End If
     End Sub
 
@@ -24,7 +31,6 @@
         dia.ShowDialog()
         If dia.SelectedPath <> "" Then
             txtDatabase.Text = dia.SelectedPath
-            My.Settings.DatabasePath = dia.SelectedPath
         End If
     End Sub
 End Class
